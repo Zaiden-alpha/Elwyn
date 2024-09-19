@@ -1,0 +1,48 @@
+/* Palette de couleurs */
+:root {
+    --bg-color: #f2f2f2; /* Gris clair */
+    --button-bg: #f7d7a3; /* Jaune pâle */
+    --button-hover-bg: #f2b11c; /* Jaune vif */
+    --text-color: #333; /* Gris foncé pour le texte */
+    --button-text-color: #000; /* Noir pour le texte sur les boutons */
+    --border-color: #d1b68e; /* Couleur de bordure douce */
+}
+
+/* Styles globaux */
+body {
+    font-family: 'Press Start 2P', cursive; /* Police de style rétro, à inclure via Google Fonts ou localement */
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styles des boutons */
+button {
+    background-color: var(--button-bg);
+    border: 2px solid var(--border-color);
+    color: var(--button-text-color);
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: var(--button-hover-bg);
+}
+
+/* Styles des sections */
+#sentiments, #besoins {
+    margin: 20px;
+}
+
+/* Styles des messages */
+#message {
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
